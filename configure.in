@@ -102,16 +102,16 @@ fi
 dnl ------------------------------------------------------------------
 dnl Checks for SSE2 build
 dnl ------------------------------------------------------------------
-AC_ARG_ENABLE([sse2],
-    AS_HELP_STRING(
-        [--disable-sse2],
-        [disable SSE2 optimization routines]
-        )
-    )
-
-AS_IF([test "x$enable_sse2" != "xno"], [
-    CFLAGS="-mfpmath=sse -msse2 -DUSE_SSE ${CFLAGS}"
-])
+dnl AC_ARG_ENABLE([sse2],
+dnl    AS_HELP_STRING(
+dnl        [--disable-sse2],
+dnl        [disable SSE2 optimization routines]
+dnl        )
+dnl    )
+dnl
+dnl AS_IF([test "x$enable_sse2" != "xno"], [
+dnl    CFLAGS="-mfpmath=sse -msse2 -DUSE_SSE ${CFLAGS}"
+dnl ])
 
 
 dnl ------------------------------------------------------------------
